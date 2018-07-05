@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Databinding</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h5>Interpolation Databinding</h5>
+    <div>
+      component name = {{componentName}};
+    </div>
+
+    <div>
+   Result = {{onePlus()}}
+    </div>
+    
+   Condition = {{onePlus() < 1 ? "ok" : "good"}};
+    </div>
+  ..................................................................
+</div>
+<div class="row" >
+  <div class="col-md-12">
+    <h5>Property Binding</h5>
+  </div>
+</div>
+<div [style.border] ="border">
+  <input  [type]="ipType" value="ok"  >
+</div>
+<div>
+<app-ip-type  [add]= "'I am in Mumbai'" ></app-ip-type>
+</div>
+</div>
