@@ -31,4 +31,39 @@
 <div>
 <app-ip-type  [add]= "'I am in Mumbai'" ></app-ip-type>
 </div>
+..........................................................
+<div class="row" >
+  <div class="col-md-12">
+    <h5>Event Binding</h5>
+  </div>
+</div>
+<div>
+  <input type ="button" value="ok" (click)="changeBorder()" >
+</div>
+<div>
+  <input type ="button" value="ok" [style.width]="dyWidth" (mouseenter)="dyWidth='400px'"  (mouseleave)="dyWidth='200px'">
+</div>
+.........................................................................
+<div class="row" >
+  <div class="col-md-12">
+    <h5>InterComponent Communication</h5>
+  </div>
+</div>
+<div>
+  <app-creater (formEv)="control=$event" ></app-creater>
+</div>   
+<div>
+  <app-receiver [ipCntrl]="control" ></app-receiver>
+</div>
+   
+
+
+
+
+
+
+
+
+
+
 </div>
