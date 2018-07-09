@@ -11,6 +11,13 @@ ipType : string;
 border : string;
 dyWidth: string;
 control : Control;
+
+
+user ={
+  userName:"codekul",
+  password:"123"
+}
+
   constructor() { 
     this.componentName = 'Angular';
     this.ipType = 'button';
@@ -26,6 +33,12 @@ onePlus(){
   changeBorder(){
     this.border = "4px solid green";
   }
+
+  print(){
+    console.log(this.user);
+    
+  }
+
 }
 export class Control {
   control : string;

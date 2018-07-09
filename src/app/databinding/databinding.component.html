@@ -55,15 +55,20 @@
 <div>
   <app-receiver [ipCntrl]="control" ></app-receiver>
 </div>
-   
-
-
-
-
-
-
-
-
-
+...............................................................................
+<div class="row" >
+  <div class="col-md-12">
+    <h5>Two way databinding</h5>
+  </div>
+</div>
+<div>
+  <input type ="text" [(ngModel)]="user.userName" >{{user.userName}}
+</div>
+<div>
+  <input type ="text"  [(ngModel)]="user.password">{{user.password}}
+</div>
+<div>
+  <input type ="button"  (click)="print()" value="print" class="btn btn-primary">
+</div>
 
 </div>
