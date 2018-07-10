@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-view-child',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   <div class="container">
      <div class="row">
          <div class="col-md-12">
-         <input type="text" #myName [value]="nm">
-         <input type="button" (click)="upperCase(myName.value)" value="go">
+         <input type="text" #mySal [value]="nm">
+         <input type="button" (click)="upperCase(mySal.value)" value="go">
+         Double value = {{this.pfDouble}}
          </div>
       </div>
     </div>  
@@ -16,14 +17,24 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ViewChildComponent implements OnInit {
- nm :string;
+//  nm :string;
+nm :number;
+pfDouble : number;
+ pf = bs => (bs*12)/100;
+
+ @ViewChild('mySal') mySal :ElementRef;
   constructor() { }
 
   ngOnInit() {
   }
 
   upperCase(nm : string){
-    this.nm = nm.toUpperCase();
+    // this.nm = nm.toUpperCase();
+    this.nm = this.pf(parseInt(nm));
+    this.pfDouble = this.pf(parseInt(this.mySal.nativeElement.value)*2);
+
+
   }
+
 
 }

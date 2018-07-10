@@ -8,6 +8,7 @@ import { ReceiverComponent } from './databinding/receiver.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ViewContentChildComponent } from './view-content-child/view-content-child.component';
 import { ViewChildComponent } from './view-content-child/view-child.component';
+import { ContentChildComponent } from './view-content-child/content-child.component';
 
 
 
@@ -23,6 +24,7 @@ import { ViewChildComponent } from './view-content-child/view-child.component';
     ReceiverComponent,
     ViewContentChildComponent,
     ViewChildComponent,
+    ContentChildComponent,
 
   ],
   imports: [
