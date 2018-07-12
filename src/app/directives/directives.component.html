@@ -18,9 +18,9 @@
   no list of courses
 </div>  -->
 
-
-<div>
-  *ngSwitchCase
+<!-- ///////////////////////////////////////////////// -->
+<!-- <div>
+  <h5>*ngSwitchCase</h5>
 </div>
 
 <ul class="nav nav-pills">
@@ -41,7 +41,38 @@
   </div>
 
   
+</div> -->
+<!-- ////////////////////////////////////////////////////////////////// -->
+<!-- <button [style.backgroundColor]="canSave ? 'red':'blue'"
+[style.color]="canSave ? 'blue':'white'"
+[style.fontWeight]="canSave ? 'bold':'normal'"
+>
+  save
+</button> -->
+<!-- ///////////////////////////////////////////////// -->
+<div>
+  <h5>*ngFor strutural directive</h5>
 </div>
+<!-- <ul>
+  <li *ngFor ="let course of courses;even as isEven">
+   {{i}}- {{course.name}}<span *ngIf ="isEven"> even</span>
+  </li>
+</ul> -->
+
+<button (click)="onAdd()">ADD</button>
+<ul>
+  <li *ngFor ="let course of courses">
+  {{course.name}}
+  <button (click)="onRemove(course)">Remove</button>
+  <!-- <button (click)="onUpdate(course)">Update</button> -->
+  </li>
+</ul>
+
+
+
+
+
+
 
 
 
