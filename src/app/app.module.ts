@@ -10,7 +10,11 @@ import { ViewContentChildComponent } from './view-content-child/view-content-chi
 import { ViewChildComponent } from './view-content-child/view-child.component';
 import { ContentChildComponent } from './view-content-child/content-child.component';
 import { DirectivesComponent } from './directives/directives.component';
-
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+import { MyRouterModule } from './app.routing';
+// import { RouterModule } from '@angular/router';
 
 
 
@@ -27,11 +31,15 @@ import { DirectivesComponent } from './directives/directives.component';
     ViewChildComponent,
     ContentChildComponent,
     DirectivesComponent,
+    LifecycleComponent,
+    FirstComponent,
+    SecondComponent,
 
   ],
   imports: [
     BrowserModule,
-    FormsModule 
+    FormsModule ,
+    MyRouterModule
    
   ],
   providers: [],

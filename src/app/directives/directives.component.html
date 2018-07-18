@@ -43,30 +43,56 @@
   
 </div> -->
 <!-- ////////////////////////////////////////////////////////////////// -->
+
+
+<div>
+  <h5>*ngStyle strutural directive</h5>
+</div>
+
 <!-- <button [style.backgroundColor]="canSave ? 'red':'blue'"
 [style.color]="canSave ? 'blue':'white'"
 [style.fontWeight]="canSave ? 'bold':'normal'"
 >
   save
 </button> -->
-<!-- ///////////////////////////////////////////////// -->
+<button [ngStyle]="{'background-color': canSave ? 'red':'blue',
+                 'color': canSave ? 'blue':'white',
+                 'font-weight': canSave ? 'bold':'normal'}"
+
+> save</button>
+
+
+<!-- //////////////////////////////////////////////// -->
+
 <div>
-  <h5>*ngFor strutural directive</h5>
+  <h5>*ngClass strutural directive</h5>
 </div>
+
+<div  [ngClass]="{'text-center':isWell}">
+      Angular Class
+</div>
+<input type ="button" value="Toggle" (click)="isWell=!isWell">
+
+
+
+<!-- ///////////////////////////////////////////////// -->
+<!-- <div>
+  <h5>*ngFor strutural directive</h5>
+</div> -->
 <!-- <ul>
   <li *ngFor ="let course of courses;even as isEven">
    {{i}}- {{course.name}}<span *ngIf ="isEven"> even</span>
   </li>
 </ul> -->
-
+<!-- 
 <button (click)="onAdd()">ADD</button>
 <ul>
   <li *ngFor ="let course of courses">
   {{course.name}}
   <button (click)="onRemove(course)">Remove</button>
-  <!-- <button (click)="onUpdate(course)">Update</button> -->
+   <button (click)="onUpdate(course)">Update</button> 
   </li>
-</ul>
+</ul> -->
 
 
 

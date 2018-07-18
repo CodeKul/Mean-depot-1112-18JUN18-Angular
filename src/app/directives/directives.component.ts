@@ -10,13 +10,14 @@ isWell:boolean;
   constructor() { }
   // course = [1,2];
   // viewMode ="list";
-  canSave=false;
+  canSave=true;
   courses = [
     {id:1, name:'course1'},
     {id:2, name:'course2'},
     {id:3, name:'course3'}
   ];
   ngOnInit() {
+    
   }
   onAdd(){
     this.courses.push(  {id:4, name:'course4'});
