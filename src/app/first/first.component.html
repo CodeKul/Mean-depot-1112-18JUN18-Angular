@@ -7,4 +7,9 @@
       <input type="text" #usNm ><input type="password" #pass><input type="button" class="btn btn-success" value="Login"(click)="login(usNm.value,pass.value)">
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <a [routerLink]="['forgot']">Forgot password</a>
+    </div>
+  </div>
 </div>

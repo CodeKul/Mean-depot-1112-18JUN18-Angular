@@ -14,6 +14,7 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { MyRouterModule } from './app.routing';
+import { ForgotComponent } from './forgot/forgot.component';
 // import { RouterModule } from '@angular/router';
 
 
@@ -34,6 +35,7 @@ import { MyRouterModule } from './app.routing';
     LifecycleComponent,
     FirstComponent,
     SecondComponent,
+    ForgotComponent,
 
   ],
   imports: [

@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
-
+ 
   constructor( private router:Router) { }
 
   ngOnInit() {
   }
 
   login(usNm:string,pass:string){
-     this.router.navigate(['second']);
+     this.router.navigate(['second',usNm]);
   }
 }
