@@ -15,6 +15,8 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { MyRouterModule } from './app.routing';
 import { ForgotComponent } from './forgot/forgot.component';
+import { SecondoneComponent } from './second/secondone.component';
+import { SecondtwoComponent } from './second/secondtwo.component';
 // import { RouterModule } from '@angular/router';
 
 
@@ -36,6 +38,8 @@ import { ForgotComponent } from './forgot/forgot.component';
     FirstComponent,
     SecondComponent,
     ForgotComponent,
+    SecondoneComponent,
+    SecondtwoComponent,
 
   ],
   imports: [

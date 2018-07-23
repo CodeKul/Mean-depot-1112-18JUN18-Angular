@@ -13,3 +13,12 @@
     <input type="text" #chUsNm><input type="button" class="btn btn-success" value="GO" (click)="changeUsNm(chUsNm.value)">
   </div>
 </div>
+<div class="row">
+  <div class="col-md-12">
+    <a [routerLink]="['one']">abc</a>
+    <a [routerLink]="['two']">pqr</a>
+  </div>
+</div>
+<div class="row">
+  <router-outlet></router-outlet>
+</div>
