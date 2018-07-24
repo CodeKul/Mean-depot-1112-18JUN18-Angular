@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-first',
@@ -7,10 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
- 
-  constructor( private router:Router) { }
+ usNm:string;
+  constructor( private router:Router,
+    private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.usNm=this.activatedRoute.snapshot.params['usNm'];
   }
 
   login(usNm:string,pass:string){

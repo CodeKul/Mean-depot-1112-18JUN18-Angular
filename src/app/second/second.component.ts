@@ -19,7 +19,7 @@ export class SecondComponent implements OnInit,OnDestroy {
     
     // this.usNm=this.activatedRoute.snapshot.params['usNm'];
     this.sub=this.activatedRoute.params.subscribe(prms => this.usNm = prms['usNm']);
-    this.subQury= this.router.routerState.root.queryParams.subscribe(qprms=> this.usNm+=' '+qprms['ver']);
+    // this.subQury= this.router.routerState.root.queryParams.subscribe(qprms=> this.usNm+=' '+qprms['ver']);
   }
 
   changeUsNm(usNm:string){

@@ -17,6 +17,7 @@ import { MyRouterModule } from './app.routing';
 import { ForgotComponent } from './forgot/forgot.component';
 import { SecondoneComponent } from './second/secondone.component';
 import { SecondtwoComponent } from './second/secondtwo.component';
+import { GuardService } from './guard.service';
 // import { RouterModule } from '@angular/router';
 
 
@@ -48,7 +49,7 @@ import { SecondtwoComponent } from './second/secondtwo.component';
     MyRouterModule
    
   ],
-  providers: [],
+  providers: [GuardService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
