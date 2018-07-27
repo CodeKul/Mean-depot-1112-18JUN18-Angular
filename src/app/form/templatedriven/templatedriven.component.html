@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form_main">
+        <h4 class="heading"><strong>Template Driven Form</strong></h4>
+        <div class="form">
+           <form  (ngSubmit)="onSubmit(myForm)"  #myForm="ngForm" > 
+            <input 
+              type="text" 
+              placeholder="User Name" 
+              class="txt"
+              name="usNm"
+               [(ngModel)]="user.usNm" 
+               required
+              >
+            <input 
+              type="text" 
+              placeholder="Email" 
+              class="txt"
+              name="email"
+              [(ngModel)]="user.email"
+              required
+               pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" 
+               #email ="ngModel"
+             >
+             <p class="help-block" *ngIf="!email.valid">please enter emailId</p>
+            <input 
+              type="text" 
+              placeholder="Password" 
+              class="txt"
+              name="pass"
+              [(ngModel)]="user.pass"
+              required
+           >
+            <input 
+              type="Submit" 
+              value="Submit" 
+              class="btn btn-info"
+              name="submit"
+              [disabled]="!myForm.form.valid"
+              >
+          </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" -->
