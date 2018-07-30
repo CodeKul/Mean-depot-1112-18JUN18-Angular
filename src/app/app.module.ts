@@ -5,7 +5,7 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { IpTypeComponent } from './databinding/ip-type.component';
 import { CreaterComponent } from './databinding/creater.component';
 import { ReceiverComponent } from './databinding/receiver.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ViewContentChildComponent } from './view-content-child/view-content-child.component';
 import { ViewChildComponent } from './view-content-child/view-child.component';
 import { ContentChildComponent } from './view-content-child/content-child.component';
@@ -18,7 +18,9 @@ import { ForgotComponent } from './forgot/forgot.component';
 import { SecondoneComponent } from './second/secondone.component';
 import { SecondtwoComponent } from './second/secondtwo.component';
 import { GuardService } from './guard.service';
-import { TemplatedrivenComponent } from './form/templatedriven/templatedriven.component';
+import { DatadrivenComponent } from './form/datadriven/datadriven.component';
+// import { TemplatedrivenComponent } from './form/templatedriven/templatedriven.component';
+// import { DatadrivenComponent } from './form/datadriven.component';
 
 
 
@@ -41,13 +43,16 @@ import { TemplatedrivenComponent } from './form/templatedriven/templatedriven.co
     ForgotComponent,
     SecondoneComponent,
     SecondtwoComponent,
-    TemplatedrivenComponent,
+    // TemplatedrivenComponent,
+    DatadrivenComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule ,
-    MyRouterModule
+    MyRouterModule,
+    ReactiveFormsModule,
+  
    
   ],
   providers: [GuardService ],
