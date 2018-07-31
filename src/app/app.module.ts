@@ -19,6 +19,9 @@ import { SecondoneComponent } from './second/secondone.component';
 import { SecondtwoComponent } from './second/secondtwo.component';
 import { GuardService } from './guard.service';
 import { DatadrivenComponent } from './form/datadriven/datadriven.component';
+import { HttpComponent } from './http-get and post/http/http.component';
+import { HttpModule } from '@angular/http';
+import { JokeService } from './http-get and post/http/joke.service';
 // import { TemplatedrivenComponent } from './form/templatedriven/templatedriven.component';
 // import { DatadrivenComponent } from './form/datadriven.component';
 
@@ -45,17 +48,20 @@ import { DatadrivenComponent } from './form/datadriven/datadriven.component';
     SecondtwoComponent,
     // TemplatedrivenComponent,
     DatadrivenComponent,
+    HttpComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule ,
     MyRouterModule,
+    HttpModule,
     ReactiveFormsModule,
   
    
   ],
-  providers: [GuardService ],
+  providers: [GuardService,
+    JokeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
