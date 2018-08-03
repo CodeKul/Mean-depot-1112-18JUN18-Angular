@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Pipes</h1>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+        simple pipe-{{cost | currency }}
+        my salary - {{cost | currency :"INR"}}
+      </div>
+    </div>
+     <div class="row">
+        <div class="col-md-12">
+         Argument Pipe- {{dt | date : "dd-MM-yyyy" }}
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-md-12">
+        chaining pipe-  {{name | slice : "0":"4" | uppercase }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        custom pipe-  {{name | custom :"0":"4" }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <input type="text" [(ngModel)]="sysNm">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li *ngFor ="let system of systems | filter:sysNm">{{system}}</li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+</div>

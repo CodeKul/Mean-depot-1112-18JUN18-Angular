@@ -22,6 +22,9 @@ import { DatadrivenComponent } from './form/datadriven/datadriven.component';
 import { HttpComponent } from './http-get and post/http/http.component';
 import { HttpModule } from '@angular/http';
 import { JokeService } from './http-get and post/http/joke.service';
+import { PipesComponent } from './pipes/pipes.component';
+import { CustomPipe } from './pipes/custom.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 // import { TemplatedrivenComponent } from './form/templatedriven/templatedriven.component';
 // import { DatadrivenComponent } from './form/datadriven.component';
 
@@ -49,6 +52,9 @@ import { JokeService } from './http-get and post/http/joke.service';
     // TemplatedrivenComponent,
     DatadrivenComponent,
     HttpComponent,
+    PipesComponent,
+    CustomPipe,
+    FilterPipe,
 
   ],
   imports: [
